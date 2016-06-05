@@ -1,10 +1,21 @@
 var React = require('react');
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
+var transparentBg = require('../styles').transparentBg;
 
 var Home = React.createClass({
   render: function() {
     "use strict";
     return (
-      <div> Hello from home!</div>
+      <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
+        <h1>Github Battle</h1>
+        <p className="lead">Motto</p>
+        <Link to='/playerOne'>
+          <button type="button" className="btn btn-large btn-success">
+            Start!
+          </button>
+        </Link>
+      </div>
     )
   }
 });
