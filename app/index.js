@@ -1,8 +1,8 @@
 var React = require('react');
-var ReacrDOM = require('react-dom');
+var ReactDOM = require('react-dom');
 var routes = require('./config/routes');
 
-ReacrDOM.render(
+ReactDOM.render(
   routes,
   document.getElementById('app')
 );
