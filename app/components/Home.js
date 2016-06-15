@@ -1,13 +1,12 @@
 var React = require('react');
 var ReactRouter = require('react-router');
+var MainContainer = require('./MainContainer');
 var Link = ReactRouter.Link;
-var transparentBg = require('../styles').transparentBg;
 
 var Home = React.createClass({
   render: function() {
-    "use strict";
     return (
-      <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
+      <MainContainer>
         <h1>Github Battle</h1>
         <p className="lead">Motto</p>
         <Link to='/playerOne'>
@@ -15,7 +14,7 @@ var Home = React.createClass({
             Start!
           </button>
         </Link>
-      </div>
+      </MainContainer>
     )
   }
 });
