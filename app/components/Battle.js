@@ -5,10 +5,11 @@ var styles = require('../styles');
 var MainContainer = require('./MainContainer');
 var UserDetails = require('./UserDetails');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
+var Loading = require('./Loading');
 
 function Battle (props) {
   return props.isLoading === true
-    ? <p> Loading! </p>
+    ? <Loading speed={200} text='Fetching Data'/>
     : <MainContainer>
         <h1>Confirm Players</h1>
         <div className="col-sm-8 col-sm-offset-2">
